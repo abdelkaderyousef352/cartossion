@@ -11,36 +11,47 @@
 </head>
 <body>
     <!-- beginning of header -->
-     <header>
+    <header>
         <div class="container">
-            
-            <div class="links2">
-                <button>جرب الان</button>
-                <a href="">الأسعار</a>
+            <!-- شعار الموقع -->
+            <div class="logo">
+                <img src="image/logo.jpg" alt="شعار كرتونيشن">
             </div>
-            
-            <div class="links1">
+    
+            <!-- زر القائمة للهواتف -->
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
+            <!-- القائمة الرئيسية -->
+            <nav class="nav-links">
                 <ul>
-                    <li><a href="">مقاطع فيديو </a></li>
-                    <li><a href="">نماذج</a></li>
-                    <li><a href="">تصميمات</a></li>
-                    <li><a href=""> تصواصل معنا</a></li>
-                    <li><a href=""> حول</a></li>
+                    <li><a href="#">مقاطع فيديو</a></li>
+                    <li><a href="#">نماذج</a></li>
+                    <li><a href="#">تصميمات</a></li>
+                    <li><a href="#">تواصل معنا</a></li>
+                    <li><a href="#">حول</a></li>
                 </ul>
-                <img src="image/logo.jpg" alt="">
+            </nav>
+    
+            <!-- زر تجربة الآن -->
+            <div class="action-buttons">
+                <a href="#" class="btn-primary">جرب الآن</a>
+                <a href="#pricing" class="btn-secondary">الأسعار</a>
             </div>
-
         </div>
+    
+        <!-- المقدمة -->
         <div id="intro" class="intro">
             <div class="text">
-                <h1><span>كرتونيشن</span> مؤسسة لصانع الرسوم المتحركة</h1>
-                <p>قم بإنشاء فيديوهات كرتونية تفاعلية لنمو علامتك التجارية. استكشف مجموعتنا من النماذج المتحركة
-                     وقم بإنشاء مقاطع كرتونية على الإنترنت من المتصفح مباشرة باستخدام محرر الفيديوهات الكرتونية من كرتونيشن
-
+                <h1><span>كرتونيشن</span> مؤسسة لصناعة الرسوم المتحركة</h1>
+                <p>
+                    قم بإنشاء فيديوهات كرتونية تفاعلية لنمو علامتك التجارية. استكشف مجموعتنا من النماذج المتحركة
+                    وقم بإنشاء مقاطع كرتونية على الإنترنت من المتصفح مباشرة باستخدام محرر الفيديوهات الكرتونية من كرتونيشن.
                 </p>
             </div>
         </div>
-     </header>
+    </header>
+    
+    
     <!-- end of header -->
 
 
@@ -128,6 +139,7 @@
 <!-- beginning of subscribe -->
 <div class="subscribe pb-5 pt-5 text-center text-md-start back-ground-white ">
     <div class="container">
+       <form action="" onsubmit="sendEmail(); reset(); return false;" >
         <div class="row">
             <div class="col-md-6 col-lg-3">
                 <div class="fs-5 mb-3">جرب الاعلانات معنا</div>
@@ -142,6 +154,7 @@
                 <input class="btn rounded-pill " type="submit" value="ارسال ">
             </div>
     </div>
+       </form>
 </div>
 </div>
 
@@ -150,18 +163,18 @@
 
     <!-- beginning of  footer -->
 
+
     
     <footer class="pb-5 pt-5 text-white-50 text-md-start text-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 lg-4">
                     <div class="info mb-5">
-                        <img class="logo mb-4 " src="image/logo.jpg" alt="">
-                        <p class="mb-5">كرتونيشن مؤسسة لصانع الرسوم المتحركة </p>
-                        <div class="copyright ">
-
-                            <h6>created By <span>Eng-Abdelkder</span></h6>
-                            <div>&copy;2024 - <span> كارتوسيشن</span></div>
+                        <img class="logo mb-4" src="image/logo.jpg" alt="شعار كرتونيشن">
+                        <p class="mb-5">كرتونيشن مؤسسة لصانع الرسوم المتحركة</p>
+                        <div class="copyright">
+                            <h6>Created By <span>Eng-Abdelkder</span></h6>
+                            <div>&copy;2024 - <span>كرتونيشن</span></div>
                         </div>
                     </div>
                 </div>
@@ -181,46 +194,28 @@
                         <h5 class="text-light">حول</h5>
                         <ul class="list-unstyled lh-lg">
                             <li>تسجيل</li>
-                            <li> مساعد</li>
+                            <li>مساعد</li>
                             <li>من نكون</li>
-                            <li> تواصل معن</li>
+                            <li>تواصل معنا</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="contanct">
-                      <h5 class="text-light">تواصل بي</h5> 
-                      <!-- <p class="lh-lg mt-3 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ut.</p>  -->
-
-                      <a class="btn rounded-pill main-btn w-100" href="">cartossion@gmail.com</a>
-
-                      <ul class="d-flex social   justify-content-center mt-5 list-unstyled gap-5 ">
-                        <li>
-                            <a class="d-block text-light" href="">
-                                <i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="d-block text-light" href="">
-                                <i class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="d-block text-light" href="">
-                                <i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="d-block text-light" href="">
-                                <i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i>
-                            </a>
-                        </li>
-                      </ul>
+                    <div class="contact">
+                        <h5 class="text-light">تواصل بي</h5>
+                        <a class="btn rounded-pill main-btn w-100" href="mailto:cartossion@gmail.com">cartossion@gmail.com</a>
+                        <ul class="d-flex social justify-content-center mt-5 list-unstyled gap-5">
+                            <li><a class="d-block text-light" href="#"><i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i></a></li>
+                            <li><a class="d-block text-light" href="#"><i class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></i></a></li>
+                            <li><a class="d-block text-light" href="#"><i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i></a></li>
+                            <li><a class="d-block text-light" href="#"><i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    
     
 
   <!-- end footer -->
@@ -232,6 +227,7 @@
       <script src="javaScirpt/all.min.js"></script>
       <script src="javaScirpt/bootstrap.bundle.min.js"></script> 
      <script src="javaScirpt/bootstrap.bundle.min.js.map"></script> 
+
     <!-- end of Script -->
 </body>
 </html>
